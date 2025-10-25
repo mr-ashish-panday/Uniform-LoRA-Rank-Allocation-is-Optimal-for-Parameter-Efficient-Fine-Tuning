@@ -1,0 +1,7 @@
+usage: fine_tune.py [-h] --model MODEL --dataset DATASET
+                    [--rank_schedule RANK_SCHEDULE]
+                    [--uniform_rank UNIFORM_RANK] [--epochs EPOCHS]
+                    [--batch_size BATCH_SIZE] [--grad_accum GRAD_ACCUM]
+                    [--lr LR] [--block_size BLOCK_SIZE] [--save_dir SAVE_DIR]
+                    [--seed SEED] [--fp16]
+fine_tune.py: error: argument --uniform_rank: invalid int value: '${RANK}'

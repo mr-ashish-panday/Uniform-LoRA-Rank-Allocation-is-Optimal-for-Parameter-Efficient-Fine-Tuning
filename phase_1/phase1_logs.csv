@@ -1,0 +1,8 @@
+timestamp,model,dataset,rank,profile_mean_peak_bytes,profile_std_peak_bytes,num_linear_replaced
+2025-10-15 17:08:11,distilbert-base-uncased,glue:sst2,8,826158592,0,38
+2025-10-15 17:35:14,gpt2-medium,glue:sst2,8,7812134912,0,1
+2025-10-15 17:37:28,gpt2-medium,glue:sst2,8,7812134912,0,1
+2025-10-15 17:44:53,bert-base-uncased,glue:sst2,8,2832019456,0,1
+2025-10-15 22:51:59,bert-base-uncased,glue:sst2,8,2832019456,0,1
+2025-10-15 23:05:01,gpt2-medium,glue:sst2,8,7812134912,0,1
+2025-10-15 23:09:36,distilbert-base-uncased,glue:sst2,8,826158592,0,38

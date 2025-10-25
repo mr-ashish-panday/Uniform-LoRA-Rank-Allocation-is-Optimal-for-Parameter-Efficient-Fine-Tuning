@@ -1,0 +1,11 @@
+/home/ashish/paper_5/phase_2/ml_env/lib/python3.12/site-packages/peft/tuners/lora/layer.py:2174: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+/home/ashish/paper_5/phase_4/fine_tune.py:280: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Trainer.__init__`. Use `processing_class` instead.
+  trainer = Trainer(
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'pad_token_id': 50256}.
+trainable params: 3,145,728 || all params: 360,721,408 || trainable%: 0.8721
+  0%|          | 0/50 [00:00<?, ?it/s]                                        0%|          | 0/50 [00:00<?, ?it/s]  0%|          | 0/50 [00:00<?, ?it/s]
+`loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+{'train_runtime': 0.0094, 'train_samples_per_second': 82573.375, 'train_steps_per_second': 5293.165, 'train_loss': 0.0, 'epoch': 2.0}
+  0%|          | 0/11 [00:00<?, ?it/s] 36%|███▋      | 4/11 [00:00<00:00, 28.49it/s] 64%|██████▎   | 7/11 [00:00<00:00, 24.19it/s] 91%|█████████ | 10/11 [00:00<00:00, 23.27it/s]100%|██████████| 11/11 [00:00<00:00, 23.49it/s]
+Eval loss: 3.831918716430664 | Perplexity: 46.1510040264067

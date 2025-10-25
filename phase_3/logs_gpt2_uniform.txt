@@ -1,0 +1,11 @@
+nohup: ignoring input
+PEFT not available; proceeding without LoRA.
+Traceback (most recent call last):
+  File "/home/ashish/paper_5/phase_3/fine_tune.py", line 322, in <module>
+    main()
+  File "/home/ashish/paper_5/phase_3/fine_tune.py", line 248, in main
+    texts = read_texts_from_dir(args.dataset)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper_5/phase_3/fine_tune.py", line 43, in read_texts_from_dir
+    raise RuntimeError(f"No .txt files found under {data_dir}")
+RuntimeError: No .txt files found under /path/to/your_dataset_txt_folder

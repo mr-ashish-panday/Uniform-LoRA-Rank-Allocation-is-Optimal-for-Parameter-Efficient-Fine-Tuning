@@ -1,0 +1,25 @@
+Traceback (most recent call last):
+  File "/home/ashish/paper_5/phase_4/fine_tune.py", line 337, in <module>
+    main()
+  File "/home/ashish/paper_5/phase_4/fine_tune.py", line 267, in main
+    schedule_df = load_schedule(args.rank_schedule) if args.rank_schedule else None
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper_5/phase_4/fine_tune.py", line 84, in load_schedule
+    df = pd.read_csv(schedule_csv)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper_5/phase_2/ml_env/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper_5/phase_2/ml_env/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper_5/phase_2/ml_env/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper_5/phase_2/ml_env/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/ashish/paper_5/phase_2/ml_env/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'schedules/gpt2-medium_ranknet.csv'

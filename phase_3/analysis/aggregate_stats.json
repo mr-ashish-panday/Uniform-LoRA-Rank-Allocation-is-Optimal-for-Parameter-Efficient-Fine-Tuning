@@ -1,0 +1,84 @@
+{
+  "rows": [
+    {
+      "model": "bert-base-uncased",
+      "schedule": "ranknet",
+      "eval_loss_mean": 2.1732617219289145,
+      "eval_loss_std": 0.22323390388321737,
+      "perplexity_mean": 8.939762087549743,
+      "perplexity_std": 2.1051560620334526,
+      "n": 3
+    },
+    {
+      "model": "bert-base-uncased",
+      "schedule": "uniform",
+      "eval_loss_mean": 1.7118467887242634,
+      "eval_loss_std": 0.004400789242159859,
+      "perplexity_mean": 5.539217500173848,
+      "perplexity_std": 0.024382332910694474,
+      "n": 3
+    },
+    {
+      "model": "distilbert-base-uncased",
+      "schedule": "ranknet",
+      "eval_loss_mean": 2.367910544077555,
+      "eval_loss_std": 0.3085942316457605,
+      "perplexity_mean": 11.036904889708943,
+      "perplexity_std": 3.6441209109331956,
+      "n": 3
+    },
+    {
+      "model": "distilbert-base-uncased",
+      "schedule": "uniform",
+      "eval_loss_mean": 1.9857443571090698,
+      "eval_loss_std": 0.00436948095317453,
+      "perplexity_mean": 7.284514002464744,
+      "perplexity_std": 0.03186034144291124,
+      "n": 3
+    },
+    {
+      "model": "gpt2-medium",
+      "schedule": "ranknet",
+      "eval_loss_mean": 3.5750033855438232,
+      "eval_loss_std": 0.2906906402238787,
+      "perplexity_mean": 36.6506605143677,
+      "perplexity_std": 9.64278380032853,
+      "n": 3
+    },
+    {
+      "model": "gpt2-medium",
+      "schedule": "uniform",
+      "eval_loss_mean": 3.1080400943756104,
+      "eval_loss_std": 0.02421139141070072,
+      "perplexity_mean": 22.381498111574373,
+      "perplexity_std": 0.5383355988182578,
+      "n": 3
+    }
+  ],
+  "paired_tests": [
+    {
+      "model": "gpt2-medium",
+      "paired_n": 3,
+      "t_eval_loss": 2.6450301324258207,
+      "p_eval_loss": 0.11813633394446389,
+      "t_perplexity": 2.4780309544716217,
+      "p_perplexity": 0.13148460427509273
+    },
+    {
+      "model": "bert-base-uncased",
+      "paired_n": 3,
+      "t_eval_loss": 3.644204347603149,
+      "p_eval_loss": 0.06773829972987026,
+      "t_perplexity": 2.827124012605882,
+      "p_perplexity": 0.10565527063412285
+    },
+    {
+      "model": "distilbert-base-uncased",
+      "paired_n": 3,
+      "t_eval_loss": 2.1358159549365356,
+      "p_eval_loss": 0.1662126208114245,
+      "t_perplexity": 1.7788522029462295,
+      "p_perplexity": 0.21723121798317208
+    }
+  ]
+}

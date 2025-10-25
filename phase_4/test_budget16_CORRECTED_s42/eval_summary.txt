@@ -1,0 +1,6 @@
+eval_loss=3.756964683532715
+eval_runtime=0.5481
+eval_samples_per_second=78.457
+eval_steps_per_second=20.07
+epoch=1.0
+perplexity=42.81826155918411

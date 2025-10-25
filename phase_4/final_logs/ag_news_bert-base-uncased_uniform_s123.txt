@@ -1,0 +1,10 @@
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForMaskedLM: ['bert.pooler.dense.bias', 'bert.pooler.dense.weight', 'cls.seq_relationship.bias', 'cls.seq_relationship.weight']
+- This IS expected if you are initializing BertForMaskedLM from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForMaskedLM from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+/home/ashish/paper_5/phase_4/fine_tune.py:280: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Trainer.__init__`. Use `processing_class` instead.
+  trainer = Trainer(
+trainable params: 2,654,208 || all params: 112,168,506 || trainable%: 2.3663
+  0%|          | 0/50 [00:00<?, ?it/s]                                        0%|          | 0/50 [00:00<?, ?it/s]  0%|          | 0/50 [00:00<?, ?it/s]
+{'train_runtime': 0.0052, 'train_samples_per_second': 151500.199, 'train_steps_per_second': 9540.315, 'train_loss': 0.0, 'epoch': 2.0}
+  0%|          | 0/11 [00:00<?, ?it/s] 27%|██▋       | 3/11 [00:00<00:00, 28.91it/s] 55%|█████▍    | 6/11 [00:00<00:00, 23.61it/s] 82%|████████▏ | 9/11 [00:00<00:00, 22.41it/s]100%|██████████| 11/11 [00:00<00:00, 23.19it/s]
+Eval loss: 2.822218894958496 | Perplexity: 16.814118072448572

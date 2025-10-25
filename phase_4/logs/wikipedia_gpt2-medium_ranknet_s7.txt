@@ -1,0 +1,21 @@
+/home/ashish/paper_5/phase_2/ml_env/lib/python3.12/site-packages/peft/tuners/lora/layer.py:2174: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+trainable params: 3,145,728 || all params: 360,721,408 || trainable%: 0.8721
+Traceback (most recent call last):
+  File "/home/ashish/paper_5/phase_4/fine_tune.py", line 332, in <module>
+    main()
+  File "/home/ashish/paper_5/phase_4/fine_tune.py", line 266, in main
+    ds = build_dataset(tokenizer, texts, args.block_size, is_causal=is_causal)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper_5/phase_4/fine_tune.py", line 61, in build_dataset
+    ds = Dataset.from_generator(gen)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper_5/phase_2/ml_env/lib/python3.12/site-packages/datasets/arrow_dataset.py", line 1072, in from_generator
+    ).read()
+      ^^^^^^
+  File "/home/ashish/paper_5/phase_2/ml_env/lib/python3.12/site-packages/datasets/io/generator.py", line 55, in read
+    dataset = self.builder.as_dataset(
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper_5/phase_2/ml_env/lib/python3.12/site-packages/datasets/builder.py", line 1173, in as_dataset
+    raise NotImplementedError(f"Loading a dataset cached in a {type(self._fs).__name__} is not supported.")
+NotImplementedError: Loading a dataset cached in a LocalFileSystem is not supported.

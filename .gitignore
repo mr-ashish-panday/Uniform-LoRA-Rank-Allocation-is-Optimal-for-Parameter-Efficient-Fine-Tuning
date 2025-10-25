@@ -1,0 +1,38 @@
+# Models (excluded)
+*.safetensors
+*.bin
+*.pt
+*.ckpt
+checkpoint*/
+phase4_fixed_*/
+models/
+
+# Virtual environments
+ml_env/
+venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+wandb/
+
+# Data
+datasets/
+*.hdf5
+*.h5

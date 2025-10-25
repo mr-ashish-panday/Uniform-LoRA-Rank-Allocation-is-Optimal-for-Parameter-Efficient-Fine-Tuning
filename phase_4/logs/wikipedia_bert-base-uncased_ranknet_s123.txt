@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/home/ashish/paper_5/phase_4/fine_tune.py", line 3, in <module>
+    from datasets import Dataset
+  File "/home/ashish/paper_5/phase_2/ml_env/lib/python3.12/site-packages/datasets/__init__.py", line 22, in <module>
+    from .arrow_dataset import Dataset
+  File "/home/ashish/paper_5/phase_2/ml_env/lib/python3.12/site-packages/datasets/arrow_dataset.py", line 67, in <module>
+    from .arrow_writer import ArrowWriter, OptimizedTypedSequence
+  File "/home/ashish/paper_5/phase_2/ml_env/lib/python3.12/site-packages/datasets/arrow_writer.py", line 27, in <module>
+    from .features import Features, Image, Value
+  File "/home/ashish/paper_5/phase_2/ml_env/lib/python3.12/site-packages/datasets/features/__init__.py", line 18, in <module>
+    from .features import Array2D, Array3D, Array4D, Array5D, ClassLabel, Features, Sequence, Value
+  File "/home/ashish/paper_5/phase_2/ml_env/lib/python3.12/site-packages/datasets/features/features.py", line 634, in <module>
+    class _ArrayXDExtensionType(pa.PyExtensionType):
+                                ^^^^^^^^^^^^^^^^^^
+AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'. Did you mean: 'ExtensionType'?

@@ -1,0 +1,12 @@
+/home/ashish/paper_5/phase_2/ml_env/lib/python3.12/site-packages/peft/tuners/lora/layer.py:2174: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+trainable params: 6,291,456 || all params: 361,114,624 || trainable%: 1.7422
+Traceback (most recent call last):
+  File "/home/ashish/paper_5/phase_4/fine_tune.py", line 337, in <module>
+    main()
+  File "/home/ashish/paper_5/phase_4/fine_tune.py", line 270, in main
+    texts = read_texts_from_dir(args.dataset)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper_5/phase_4/fine_tune.py", line 46, in read_texts_from_dir
+    raise RuntimeError(f"No .txt files found under {data_dir}")
+RuntimeError: No .txt files found under /home/ashish/datasets/openwebtext
